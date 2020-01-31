@@ -1,0 +1,24 @@
+intents:
+- out_of_scope:
+    triggers: action_utter_chitchat
+- greet
+- affirm
+- deny
+- faq
+- get_dpr_status
+entities:
+- id
+- info_type
+- activity_name
+slots:
+  activity_name:
+    type: text
+  id:
+    type: text
+  info_type:
+    type: categorical
+    values:
+    - dpr
+actions:
+- action_utter_chitchat
+- respond_faq
