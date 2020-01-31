@@ -22,3 +22,7 @@ slots:
 actions:
 - action_utter_chitchat
 - respond_faq
+- utter_did_that_help
+responses:
+  utter_did_that_help:
+  - text: "Did that help you?"
